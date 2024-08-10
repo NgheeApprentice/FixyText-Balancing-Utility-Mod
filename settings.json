@@ -1,0 +1,267 @@
+{
+    "tabs":[
+        {
+            "title":"AUDIO_VIDEO_CATEGORY",
+            "sources": ["Volume", "VolumeHost", "VolumeSfx", "VolumeMusic", "AudioMix", "FullScreen"]
+        },
+        {
+            "title":"CONTENT_CONTROL_CATEGORY",
+            "sources": ["Locale", "FamilyFriendly", "PlayerContentFiltering", "ModeratedRoom", "FilterUSCentricContent"]
+        },
+        {
+            "title":"ACCESSIBILITY_CATEGORY",
+            "sources": ["Subtitles", "MotionSensitivity", "ExtendedTimers", "NoTimers"]
+        },
+        {
+            "title":"GAMEPLAY_CATEGORY",
+            "sources": ["AudienceOn", "MaxPlayers", "SkipTutorial", "PostGameSharing", "PasswordedRoom", "RequireTwitch", "GamepadStart", "HideRoomCode"]
+        },
+        {
+            "title":"MODIFICATIONS_CATEGORY",
+            "sources": ["FavouriteBalancing", "CoauthorBalancing", "CharacterLimitType", "SumCharacterNumber", "IndividualCharacterNumber"]
+        }
+    ],
+    "items": [
+
+
+        {
+            "title": "VOLUME",
+            "type": "Range",
+            "onChangedSfx": "PAUSE/SETTINGS/VolumeMasterChanged",
+            "source": "Volume",
+            "description": "VOLUME_DESCRIPTION",
+            "step": 0.1
+        },
+        {
+            "title": "VOLUME_HOST",
+            "type": "Range",
+            "onChangedSfx": "PAUSE/SETTINGS/VolumeHostChanged",
+            "onChangedFaderGroup": "HOST",
+            "source": "VolumeHost",
+            "description": "VOLUME_HOST_DESCRIPTION",
+            "step": 0.1
+        },
+        {
+            "title": "VOLUME_SFX",
+            "type": "Range",
+            "onChangedSfx": "PAUSE/SETTINGS/VolumeSFXChanged",
+            "onChangedFaderGroup": "SFX",
+            "source": "VolumeSfx",
+            "description": "VOLUME_SFX_DESCRIPTION",
+            "step": 0.1
+        },
+        {
+            "title": "VOLUME_MUSIC",
+            "type": "Range",
+            "onChangedSfx": "PAUSE/SETTINGS/VolumeMusicChanged",
+            "onChangedFaderGroup": "MUSIC",
+            "source": "VolumeMusic",
+            "description": "VOLUME_MUSIC_DESCRIPTION",
+            "step": 0.1
+        },
+        {
+            "title": "AUDIO_MIX",
+            "type": "WideList",
+            "onChangedSfx": "PAUSE/SETTINGS/WideListToggle",
+            "source": "AudioMix",
+            "description": "AUDIO_MIX_DESCRIPTION",
+            "options": [
+                "AUDIO_MIX_SURROUND",
+                "AUDIO_MIX_STEREO",
+                "AUDIO_MIX_MONO"
+            ],
+            "defaultValueIndex":0,
+            "localizedOptions": true
+        },
+        {
+            "title": "FULL_SCREEN",
+            "type": "Toggle",
+            "onChangedSfx": "PAUSE/SETTINGS/FullScreenToggle",
+            "source": "FullScreen",
+            "description": "FULL_SCREEN_DESCRIPTION",
+            "isValid": "supportsWindow AND supportsFullScreen"
+        },
+
+
+        {
+            "title": "LANGUAGE",
+            "type": "ExtraWideList",
+            "onChangedSfx": "PAUSE/SETTINGS/WideListToggle",
+            "source": "Locale",
+            "description": "LANGUAGE_DESCRIPTION",
+            "isValid": "supportedLocales AND supportedLocales != \"en\"",
+            "isEnabled": "currentContext == \"menu\"",
+            "options": "supportedLocales",
+            "defaultValueIndex": 0,
+            "localizedOptions": true
+        },
+        {
+            "title": "FAMILY_FRIENDLY",
+            "type": "Toggle",
+            "source": "FamilyFriendly",
+            "description": "FAMILY_FRIENDLY_DESCRIPTION",
+            "isEnabled": "currentContext == \"menu\" OR currentContext == \"lobby\" OR currentContext == \"postgame\""
+        },
+        {
+            "title": "PLAYER_CONTENT_FILTERING",
+            "type": "WideList",
+            "onChangedSfx": "PAUSE/SETTINGS/WideListToggle",
+            "source": "PlayerContentFiltering",
+            "description": [ "PLAYER_CONTENT_FILTERING_OFF_DESCRIPTION", "PLAYER_CONTENT_FILTERING_HATE_SPEECH_DESCRIPTION", "PLAYER_CONTENT_FILTERING_PROFANITY_DESCRIPTION" ],
+            "options": [ "PLAYER_CONTENT_FILTERING_OFF", "PLAYER_CONTENT_FILTERING_HATE_SPEECH", "PLAYER_CONTENT_FILTERING_PROFANITY" ],
+            "defaultValueIndex": 1,
+            "localizedOptions": true,
+            "isEnabled": "currentContext == \"menu\""
+        },
+        {
+            "title": "MODERATION",
+            "type": "Password",
+            "source": "ModeratedRoom",
+            "password": "MODERATION_PASSWORD",
+            "description": "MODERATION_DESCRIPTION",
+            "isEnabled": "currentContext == \"menu\""
+        },
+        {
+            "title": "FILTER_US_CENTRIC",
+            "type": "Toggle",
+            "source": "FilterUSCentricContent",
+            "description": "FILTER_US_CENTRIC_DESCRIPTION",
+            "isEnabled": "currentContext == \"menu\" OR currentContext == \"lobby\" OR currentContext == \"postgame\""
+        },
+        {
+            "title": "SUBTITLES",
+            "type": "Toggle",
+            "source": "Subtitles",
+            "description": "SUBTITLES_DESCRIPTION"
+        },
+        {
+            "title": "NO_TIMERS",
+            "type": "Toggle",
+            "source": "NoTimers",
+            "description": "NO_TIMERS_DESCRIPTION",
+            "isEnabled": "currentContext == \"menu\" OR currentContext == \"lobby\" OR currentContext == \"postgame\""
+        },
+        {
+            "title": "EXTENDED_TIMERS",
+            "type": "Toggle",
+            "source": "ExtendedTimers",
+            "description": "EXTENDED_TIMERS_DESCRIPTION",
+            "isEnabled": "currentContext == \"menu\" OR currentContext == \"lobby\" OR currentContext == \"postgame\""
+        },
+
+
+        {
+            "title": "AUDIENCE_MODE",
+            "type": "Toggle",
+            "source": "AudienceOn",
+            "description": "AUDIENCE_MODE_DESCRIPTION",
+            "isEnabled": "currentContext == \"menu\""
+        },
+        {
+            "title": "SKIP_TUTORIALS",
+            "type": "Toggle",
+            "source": "SkipTutorial",
+            "description": "SKIP_TUTORIALS_DESCRIPTION",
+            "isEnabled": "currentContext == \"menu\" OR currentContext == \"lobby\" OR currentContext == \"postgame\""
+        },
+        {
+            "title": "POSTGAME_SHARING",
+            "type": "Toggle",
+            "source": "PostGameSharing",
+            "description": "POSTGAME_SHARING_DESCRIPTION",
+            "isEnabled": "currentContext == \"menu\" OR currentContext == \"lobby\" OR currentContext == \"postgame\""
+        },
+        {
+            "title": "PASSWORD_PROTECTED",
+            "type": "Password",
+            "source": "PasswordedRoom",
+            "password": "PASSWORD_PROTECTED_LABEL",
+            "description": "PASSWORD_PROTECTED_DESCRIPTION",
+            "isEnabled": "currentContext == \"menu\""
+        },
+        {
+            "title": "TWITCH_REQUIRED",
+            "type": "Toggle",
+            "source": "RequireTwitch",
+            "description": "TWITCH_REQUIRED_DESCRIPTION",
+            "isEnabled": "currentContext == \"menu\""
+        },
+        {
+            "title": "START_GAMEPAD",
+            "type": "Toggle",
+            "source": "GamepadStart",
+            "description": "START_GAMEPAD_DESCRIPTION",
+            "isEnabled": "currentContext == \"menu\""
+        },
+        {
+            "title": "HIDE_ROOM_CODE",
+            "type": "Toggle",
+            "source": "HideRoomCode",
+            "description": "HIDE_ROOM_CODE_DESCRIPTION",
+            "isEnabled": "currentContext == \"menu\""
+        },
+        {
+            "title": "MAX_PLAYERS",
+            "type": "List",
+            "onChangedSfx": "PAUSE/SETTINGS/WideListToggle",
+            "source": "MaxPlayers",
+            "description": "MAX_PLAYERS_DESCRIPTION",
+            "options": [ 3, 4, 5, 6, 7, 8 ],
+            "defaultValueIndex": 7,
+            "isEnabled": "currentContext == \"menu\""
+        },
+        {
+            "title": "CHARACTER_LIMIT_TYPE",
+            "type": "WideList",
+            "onChangedSfx": "PAUSE/SETTINGS/WideListToggle",
+            "source": "CharacterLimitType",
+            "description": [ "CHARACTER_LIMIT_TYPE_SUM_DESCRIPTION", "CHARACTER_LIMIT_TYPE_INDIVIDUAL_DESCRIPTION"],
+            "options": [ "CHARACTER_LIMIT_TYPE_SUM", "CHARACTER_LIMIT_TYPE_INDIVIDUAL"],
+            "defaultValueIndex": 0,
+            "localizedOptions": true,
+            "isEnabled": "currentContext == \"menu\" OR currentContext == \"lobby\" OR currentContext == \"postgame\""
+        },
+        {
+            "title": "INDIVIDUAL_CHARACTER_NUMBER",
+            "type": "List",
+            "onChangedSfx": "PAUSE/SETTINGS/WideListToggle",
+            "source": "IndividualCharacterNumber",
+            "description": "INDIVIDUAL_CHARACTER_NUMBER_DESCRIPTION",
+            "options": [ 80, 106, 160, 165, 200],
+            "defaultValueIndex": 0,
+            "isEnabled": "currentContext == \"menu\" OR currentContext == \"lobby\" OR currentContext == \"postgame\""
+        },
+        {
+            "title": "SUM_CHARACTER_NUMBER",
+            "type": "List",
+            "onChangedSfx": "PAUSE/SETTINGS/WideListToggle",
+            "source": "SumCharacterNumber",
+            "description": "SUM_CHARACTER_NUMBER_DESCRIPTION",
+            "options": [215, 320, 460, 650, 663],
+            "defaultValueIndex": 0,
+            "isEnabled": "currentContext == \"menu\" OR currentContext == \"lobby\" OR currentContext == \"postgame\""
+        },
+        {
+            "title": "FAVOURITE_VOTE_BALANCING",
+            "type": "WideList",
+            "onChangedSfx": "PAUSE/SETTINGS/WideListToggle",
+            "source": "FavouriteBalancing",
+            "description": [ "FAVOURITE_VOTE_BALANCING_1_5_DESCRIPTION", "FAVOURITE_VOTE_BALANCING_1_333_DESCRIPTION", "FAVOURITE_VOTE_BALANCING_DYNAMIC_DESCRIPTION", "FAVOURITE_VOTE_BALANCING_NONE_DESCRIPTION"],
+            "options": [ "FAVOURITE_VOTE_BALANCING_1_5", "FAVOURITE_VOTE_BALANCING_1_333", "FAVOURITE_VOTE_BALANCING_DYNAMIC", "FAVOURITE_VOTE_BALANCING_NONE"],
+            "defaultValueIndex": 0,
+            "localizedOptions": false,
+            "isEnabled": "currentContext == \"menu\" OR currentContext == \"lobby\" OR currentContext == \"postgame\""
+        },
+        {
+            "title": "COAUTHOR_BONUS_BALANCING",
+            "type": "WideList",
+            "onChangedSfx": "PAUSE/SETTINGS/WideListToggle",
+            "source": "CoauthorBalancing",
+            "description": [ "COAUTHOR_BONUS_BALANCING_1_5_DESCRIPTION", "COAUTHOR_BONUS_BALANCING_1_333_DESCRIPTION", "COAUTHOR_BONUS_BALANCING_DYNAMIC_DESCRIPTION", "COAUTHOR_BONUS_BALANCING_NONE_DESCRIPTION"],
+            "options": [ "COAUTHOR_BONUS_BALANCING_1_5", "COAUTHOR_BONUS_BALANCING_1_333", "COAUTHOR_BONUS_BALANCING_DYNAMIC", "COAUTHOR_BONUS_BALANCING_NONE"],
+            "defaultValueIndex": 3,
+            "localizedOptions": true,
+            "isEnabled": "currentContext == \"menu\" OR currentContext == \"lobby\" OR currentContext == \"postgame\""
+        }
+    ]
+}

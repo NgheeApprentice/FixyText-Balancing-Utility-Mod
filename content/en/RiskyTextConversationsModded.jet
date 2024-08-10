@@ -1,0 +1,68 @@
+{
+    "category": "FLIRTY",
+    "followupId": "pickup-002",
+    "id": "pickup-001",
+    "partner": "Oscar",
+    "round": "FIRST",
+    "isValid":"numGamesPlayedEver >= 1",
+    "texts": [{
+            "partner": "top 100 best pickup lines to swoon women",
+            "player": "uhhh... this isn't Google..."
+        },
+        {
+            "partner": "OMG so sorry! excuse me, this is probably such a bad first impression haha",
+            "player": "not unless you make it one... lol"
+        }
+    ]
+},
+{
+    "category": "FLIRTY",
+    "followupId": "pickup-003",
+    "id": "pickup-002",
+    "partner": "Oscar (attempt 2)",
+    "round": "SECOND",
+    "isValid":false,
+    "texts": [{
+            "partner": "hey bb, are  you a {{POPWORD}}?",
+            "player": "...is that... half of a pickup line?"
+        },
+        {
+            "partner": "damn it!!! I did it again!!! I apologise for that, {{HIGHPLAYER}}. That's ur name right??",
+            "player": "no...? why did you think {{HIGHPLAYER}} was my name?"
+        }
+    ]
+},
+{
+    "category": "FLIRTY",
+    "followupId": "",
+    "id": "pickup-003",
+    "partner": "Oscar (3 days later)",
+    "round": "THIRD",
+    "isValid":false,
+    "texts": [{
+            "partner": "okay okay I've got one! \n If you were a part of the solar system, what would you be?",
+            "player": "If you dare say Jupiter..."
+        },
+        {
+            "partner": "You would be the sun, because you're the HOTTEST girl around, and you're the LIGHT of my world <3",
+            "player": "awwww... I'm glad {{PLAYER}} convinced me to keep chatting with you <3"
+        }
+    ]
+},
+{
+    "category": "FRIENDS-FAMILY",
+    "followupId": "",
+    "id": "milk-001",
+    "partner": "Dad",
+    "round": "THIRD",
+    "isValid": "",
+    "texts": [{
+            "partner": "Hey kiddo, I'll just be out of the house 2 get some milk. No other reason",
+            "player": "why did you... need to tell me that?"
+        },
+        {
+            "partner": "milk is important. Also take care of your mother 4 me",
+            "player": "You're starting to worry me, dad"
+        }
+    ]
+},
