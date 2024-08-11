@@ -49,20 +49,3 @@
         }
     ]
 },
-{
-    "category": "FRIENDS-FAMILY",
-    "followupId": "",
-    "id": "milk-001_es-XL",
-    "partner": "Dad",
-    "round": "THIRD",
-    "isValid": "",
-    "texts": [{
-            "partner": "Hey kiddo, I'll just be out of the house 2 get some milk. No other reason",
-            "player": "why did you... need to tell me that?"
-        },
-        {
-            "partner": "milk is important. Also take care of your mother 4 me",
-            "player": "You're starting to worry me, dad"
-        }
-    ]
-},
