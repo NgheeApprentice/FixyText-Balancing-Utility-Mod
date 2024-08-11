@@ -61,6 +61,8 @@ Once you have opened your current locale's `RiskyTextConversations.jet` in a tex
 Once you have located this code, create a new line directly after this first opening square bracket, and paste the modded content on the new line you created. Save the changes made to the current `RiskyTextConversations.jet` you are working with, and congratulations! You have successfully installed the bonus content for one locale. Repeat this process for all locales supported by this utility mod.
 
 # And, that's everything!
+### Special thanks to Inkyst for translating this utility mod into Español latinoamericano! (es-XL)
+
 Thank you again for stopping by and looking over this FixyText balancing utility mod! Please let me know if you encounter any bugs specific to this utility mod once properly installed. And if you haven't already, consider browsing my Youtube channel! Enjoy this mod, everyone. Take care.
 
 \* {{locale}} refers to the current locale ID you'll be working with. Currently supported locale IDs include **en** and **es-XL**. Remember to keep working with the same locale ID until you are finished with it.
