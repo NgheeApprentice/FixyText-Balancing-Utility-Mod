@@ -1,0 +1,68 @@
+{
+    "category": "FLIRTY",
+    "followupId": "pickup-002-es-XL",
+    "id": "pickup-001-es-XL",
+    "partner": "Oscar",
+    "round": "FIRST",
+    "isValid":"numGamesPlayedEver >= 1",
+    "texts": [{
+            "partner": "los 100 mejores alagos para desmayar a las chicas",
+            "player": "oye... esto no es Google..."
+        },
+        {
+            "partner": "OMG, lo siento! perdoname, esto ha de ser una terrible primera impresion mia, jaja.",
+            "player": "no hasta que lo hagas una terrible primera impression... lol"
+        }
+    ]
+},
+{
+    "category": "FLIRTY",
+    "followupId": "pickup-003-es-XL",
+    "id": "pickup-002-es-XL",
+    "partner": "Oscar (Segundo Intento)",
+    "round": "SECOND",
+    "isValid":false,
+    "texts": [{
+            "partner": "oye bb, acaso eres un {{POPWORD}}?",
+            "player": "...acaso eso es.... un alago incompleto??"
+        },
+        {
+            "partner": "Rayos!!! Lo hice de nuevo!!! Porfavor perdoname, {{HIGHPLAYER}}. ...Ese es tu nombre, verdad??",
+            "player": "no...? Porque pensaste que {{HIGHPLAYER}} fuera mi nombre?"
+        }
+    ]
+},
+{
+    "category": "FLIRTY",
+    "followupId": "",
+    "id": "pickup-003-es-XL",
+    "partner": "Oscar (3 dias despues...)",
+    "round": "THIRD",
+    "isValid":false,
+    "texts": [{
+            "partner": "okay okay! Ya lo tengo! \n si fueras un planeta del sistema solar, cual serias?",
+            "player": "Te juro que si dices Jupiter..."
+        },
+        {
+            "partner": "Tu serias el sol, porque eres la chica mas RADIANTE que conozco, y eres la LUZ de mi mundo <3",
+            "player": "awwww... que bueno que {{PLAYER}} me convencio de seguir chateando contigo <3"
+        }
+    ]
+},
+{
+    "category": "FRIENDS-FAMILY",
+    "followupId": "",
+    "id": "milk-001_es-XL",
+    "partner": "Dad",
+    "round": "THIRD",
+    "isValid": "",
+    "texts": [{
+            "partner": "Hey kiddo, I'll just be out of the house 2 get some milk. No other reason",
+            "player": "why did you... need to tell me that?"
+        },
+        {
+            "partner": "milk is important. Also take care of your mother 4 me",
+            "player": "You're starting to worry me, dad"
+        }
+    ]
+},
