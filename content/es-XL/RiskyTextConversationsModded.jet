@@ -49,3 +49,20 @@
         }
     ]
 },
+{
+    "category": "FRIENDS-FAMILY",
+    "followupId": "",
+    "id": "cigs-001_es-XL",
+    "partner": "Papá",
+    "round": "THIRD",
+    "isValid": "",
+    "texts": [{
+            "partner": "Oye hijo, me ire de la casa un rato para comprarme unos cigarillos. Nada mas.",
+            "player": "esta bien, pero... porque me lo dices por mensaje?"
+        },
+        {
+            "partner": "ocupo fumarme uno. Y de paso, cuida a tu madre por mi, xvafor.",
+            "player": "Papá, me esta empezando a preocupar."
+        }
+    ]
+},
