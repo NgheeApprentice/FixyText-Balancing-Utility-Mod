@@ -62,6 +62,7 @@ Once you have located this code, create a new line directly after this first ope
 
 # And, that's everything!
 ### Special thanks to Inkyst for translating this utility mod into Español latinoamericano! (es-XL)
+### Special thanks to HastaGuigui for translating this utility mod into Français! (fr)
 
 Thank you again for stopping by and looking over this FixyText balancing utility mod! Please let me know if you encounter any bugs specific to this utility mod once properly installed. And if you haven't already, consider browsing my Youtube channel! Enjoy this mod, everyone. Take care.
 
