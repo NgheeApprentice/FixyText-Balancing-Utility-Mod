@@ -66,4 +66,4 @@ Once you have located this code, create a new line directly after this first ope
 
 Thank you again for stopping by and looking over this FixyText balancing utility mod! Please let me know if you encounter any bugs specific to this utility mod once properly installed. And if you haven't already, consider browsing my Youtube channel! Enjoy this mod, everyone. Take care.
 
-\* {{locale}} refers to the current locale ID you'll be working with. Currently supported locale IDs include **en** and **es-XL**. Remember to keep working with the same locale ID until you are finished with it.
+\* {{locale}} refers to the current locale ID you'll be working with. Currently supported locale IDs include **en**, **fr** and **es-XL**. Remember to keep working with the same locale ID until you are finished with it.
