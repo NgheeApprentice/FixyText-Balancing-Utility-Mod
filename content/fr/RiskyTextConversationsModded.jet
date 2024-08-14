@@ -1,0 +1,68 @@
+{
+    "category": "FLIRTY",
+    "followupId": "pickup-002",
+    "id": "pickup-001",
+    "partner": "Oscar",
+    "round": "FIRST",
+    "isValid":"numGamesPlayedEver >= 1",
+    "texts": [{
+            "partner": "meilleurs phrases de dragues pour pécho en boite",
+            "player": "euhhh... je suis pas Google..."
+        },
+        {
+            "partner": "OMG je suis tellement désolé! pardon j'ai sûrement fait une très mauvaise première impression haha",
+            "player": "non... à part si tu veux que c'en soit une mdr"
+        }
+    ]
+},
+{
+    "category": "FLIRTY",
+    "followupId": "pickup-003",
+    "id": "pickup-002",
+    "partner": "Oscar (2e essai)",
+    "round": "SECOND",
+    "isValid":false,
+    "texts": [{
+            "partner": "yo bb, c'est toi la  {{POPWORD}} ?",
+            "player": "euh... c'est qu'une moitié d'une phrase de drague...?"
+        },
+        {
+            "partner": "zut!!! je me suis encore foiré!!! encore sincèrement désolé, {{HIGHPLAYER}}. d'ailleurs, c'est ça ton nom?",
+            "player": "non...? qu'est-ce qui te fait dire que je m'appelle {{HIGHPLAYER}}?"
+        }
+    ]
+},
+{
+    "category": "FLIRTY",
+    "followupId": "",
+    "id": "pickup-003",
+    "partner": "Oscar (3 jours plus tard)",
+    "round": "THIRD",
+    "isValid":false,
+    "texts": [{
+            "partner": "ok ok j'ai trouvé! \n Si tu faisais partie du système solaire, qu'est-ce que tu serais?",
+            "player": "j'te jure si tu dis Jupiter..."
+        },
+        {
+            "partner": "Tu serais le soleil, car t'es la dame la plus CHAUDE ici, et tu es la LUMIÈRE de mon monde <3",
+            "player": "awwww... {{PLAYER}} avait raison en me disant de continuer à discuter avec toi <3"
+        }
+    ]
+},
+{
+    "category": "FRIENDS-FAMILY",
+    "followupId": "",
+    "id": "milk-001",
+    "partner": "Papa",
+    "round": "THIRD",
+    "isValid": "",
+    "texts": [{
+            "partner": "Yo fiston, me cherche pas, je suis parti acheter du lait. C'est tout",
+            "player": "pourquoi est-ce que t'as... besoin de me dire ça?"
+        },
+        {
+            "partner": "le lait c'est bon pour les os. d'ailleurs prends soin de ta mère pour moi",
+            "player": "Papa, tu me fais peur"
+        }
+    ]
+},
