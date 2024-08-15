@@ -54,7 +54,7 @@ To install the main utility settings into FixyText, go to you local files for Th
 
 For installing the bonus content, it's a little different. First, go to this mod's directory and navigate to `.../content/{{locale}}*`, open `RiskyTextConversationsModded.jet` in a text editor, and copy its contents. Next, go your local files for The Jackbox Party Pack 10, and navigate to `...\The Jackbox Party Pack 10\games\RiskyText\content\{{locale}}*` and open its `RiskyTextConversations.jet` in a text editor.
 Once you have opened your current locale's `RiskyTextConversations.jet` in a text editor, you'll notice that it starts with a structure that looks something like this:
-```
+```json
 {
  "content": [
 ```
@@ -63,7 +63,8 @@ Once you have located this code, create a new line directly after this first ope
 # And, that's everything!
 ### Special thanks to Inkyst for translating this utility mod into Español latinoamericano! (es-XL)
 ### Special thanks to HastagGuigui for translating this utility mod into Français! (fr)
+### Special thanks to Team Gamechanger for translating this utility mod into Deutsch! (de)
 
 Thank you again for stopping by and looking over this FixyText balancing utility mod! Please let me know if you encounter any bugs specific to this utility mod once properly installed. And if you haven't already, consider browsing my Youtube channel! Enjoy this mod, everyone. Take care.
 
-\* {{locale}} refers to the current locale ID you'll be working with. Currently supported locale IDs include **en**, **fr** and **es-XL**. Remember to keep working with the same locale ID until you are finished with it.
+\* {{locale}} refers to the current locale ID you'll be working with. Currently supported locale IDs for the bonus content include **en**, **fr** and **es-XL**. Remember to keep working with the same locale ID until you are finished with it.
